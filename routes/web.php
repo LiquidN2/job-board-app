@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Pages\Home;
+use App\Livewire\Pages\Dashboard;
 
-Route::get('/', Home::class);
+Route::get('/', Dashboard::class);

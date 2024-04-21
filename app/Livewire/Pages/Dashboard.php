@@ -5,11 +5,11 @@ namespace App\Livewire\Pages;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Home extends Component
+class Dashboard extends Component
 {
-    #[Title('Home')]
+    #[Title('Dashboard')]
     public function render()
     {
-        return view('livewire.pages.home');
+        return view('livewire.pages.dashboard');
     }
 }
