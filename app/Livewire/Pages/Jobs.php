@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class Jobs extends Component
 {
-    #[Title('Contact')]
+    #[Title('Jobs')]
     public function render()
     {
         return view('livewire.pages.jobs')->with([

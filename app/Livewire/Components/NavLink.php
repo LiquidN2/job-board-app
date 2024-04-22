@@ -14,7 +14,9 @@ class NavLink extends Component
     public function mount(): void
     {
         $this->href = !empty($this->path) ? "/" . $this->path : "/";
-        $this->active = $this->href === "/" ? request()->is("/") : request()->is($this->path);
+        $this->active = $this->href === "/"
+            ? request()->is("/")
+            : (request()->is($this->path) || request()->is($this->path . "/*"));
     }
 
     public function render()

@@ -9,7 +9,6 @@
                 :title="$job->title"
                 :employer="$job->employer->name"
                 :salary="$job->salary"
-                :description="$job->description"
             />
         @endforeach
     </div>

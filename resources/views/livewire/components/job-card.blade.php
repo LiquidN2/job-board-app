@@ -6,5 +6,4 @@
     <h4 class="font-semibold text-lg">{{ $title }}</h4>
     <h6 class="font-semibold text-sky-600">{{ $employer }}</h6>
     <p class="mt-2"><strong>Salary</strong>: ${{ Number::format($salary) }}</p>
-    <p class="mt-2">{{ $description }}</p>
 </a>

@@ -9,7 +9,6 @@ class JobCard extends Component
     public string $id;
     public string $title;
     public string $employer;
-    public string $description;
     public int $salary;
 
     public function render()
