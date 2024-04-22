@@ -8,6 +8,7 @@ class Button extends Component
 {
     public bool $isanchor = false;
     public string $href = "";
+    public string $name = "Button";
 
     public function render()
     {
