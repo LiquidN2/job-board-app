@@ -1,4 +1,4 @@
-<nav class="bg-gray-800">
+<nav class="fixed w-full top-0 left-0 bg-gray-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
