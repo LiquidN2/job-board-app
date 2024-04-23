@@ -9,10 +9,10 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <livewire:components.nav-link name="Dashboard"/>
-                        <livewire:components.nav-link path="about" name="About"/>
-                        <livewire:components.nav-link path="jobs" name="Jobs"/>
-                        <livewire:components.nav-link path="contact" name="Contact"/>
+                        <x-nav-link>Dashboard</x-nav-link>
+                        <x-nav-link path="about">About</x-nav-link>
+                        <x-nav-link path="jobs">Jobs</x-nav-link>
+                        <x-nav-link path="contact">Contact</x-nav-link>
                     </div>
                 </div>
             </div>

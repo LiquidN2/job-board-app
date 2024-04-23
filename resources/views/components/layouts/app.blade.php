@@ -10,8 +10,8 @@
 </head>
 <body class="h-full">
 <div class="min-h-full">
-    <livewire:components.nav />
-    <livewire:components.header heading="{{ $heading ?? 'Page Heading' }}"/>
+    <livewire:components.nav/>
+    <x-header heading="{{ $heading }}"/>
     <main>
         <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             {{ $slot }}
