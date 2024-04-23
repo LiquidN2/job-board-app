@@ -1,7 +1,7 @@
 <div>
     <x-slot:heading>Create New Job</x-slot:heading>
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}
-    <form action="/jobs" method="POST" id="form-job-create">
+    <form wire:submit="save">
         @csrf
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
@@ -12,24 +12,43 @@
 
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <div class="sm:col-span-3">
-                        <livewire:components.input-label for="title" label="Job Title"/>
-                        <div class="mt-2">
-                            <livewire:components.input-text name="title" id="title"/>
-                        </div>
+                        <x-input-label for="title">Title</x-input-label>
+                        <x-input-text
+                            type="text"
+                            name="title"
+                            id="title"
+                            placeholder="School Principle"
+                            class="mt-2"
+                            required
+                            wire:model="title"
+                        />
+                        <x-input-error name="title"/>
                     </div>
                     <div class="sm:col-span-3"></div>
                     <div class="sm:col-span-3">
-                        <livewire:components.input-label for="salary" label="Job Salary"/>
-                        <div class="mt-2">
-                            <livewire:components.input-text name="salary" id="salary"/>
-                        </div>
+                        <x-input-label for="salary">Salary</x-input-label>
+                        <x-input-text
+                            type="number"
+                            name="salary"
+                            id="salary"
+                            placeholder="80000"
+                            class="mt-2"
+                            wire:model="salary"
+                        />
+                        <x-input-error name="salary"/>
                     </div>
                     <div class="sm:col-span-3"></div>
                     <div class="sm:col-span-3">
-                        <livewire:components.input-label for="description" label="Job Description"/>
-                        <div class="mt-2">
-                            <livewire:components.input-text name="description" id="description"/>
-                        </div>
+                        <x-input-label for="description">Job Description</x-input-label>
+                        <x-input-text
+                            is_text_area
+                            id="description"
+                            name="description"
+                            rows="3"
+                            class="mt-2"
+                            wire:model="description"
+                        />
+                        <x-input-error name="description"/>
                     </div>
                 </div>
             </div>
