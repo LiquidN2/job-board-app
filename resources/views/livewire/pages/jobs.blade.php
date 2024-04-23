@@ -12,7 +12,7 @@
             />
         @endforeach
     </div>
-    <div class="row d-flex justify-content-md-center mt-4">
+    <div class="mt-4">
         {{ $jobs->links() }}
     </div>
 </div>

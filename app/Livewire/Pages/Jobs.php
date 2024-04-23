@@ -12,7 +12,7 @@ class Jobs extends Component
     public function render()
     {
         return view('livewire.pages.jobs')->with([
-            'jobs' => Job::with(['employer'])->latest()->paginate(10)
+            'jobs' => Job::with(['employer'])->latest()->paginate(5)
         ]);
     }
 }
